@@ -4,25 +4,12 @@ const addCurrencyBtn = document.querySelector(".searchbtn");
 const addCurrencyList = document.querySelector(".listadd");
 const currenciesList = document.querySelector(".currencies");
 
-const dataURL = "http://data.fixer.io/api/latest?access_key=99ef692a602e358b754214299c604ef0";
-
-const initiallyDisplayedCurrencies = ["USD", "EUR", "AUD", "AED", "RUB"];
+const dataURL = "https://api.exchangeratesapi.io/latest";
+const initiallyDisplayedCurrencies = ["USD", "EUR", "AUD", "GBP", "RUB"];
 let baseCurrency;
 let baseCurrencyAmount;
 
 let currencies = [
-  {
-    name: "United Arab Emirates dirham",
-    abbreviation: "AED",
-    symbol: "د.إ",
-    flagURL: "https://img.geonames.org/flags/x/ae.gif"
-  },
-  {
-    name: "Afghan afghani",
-    abbreviation: "AFN",
-    symbol: "\u060B",
-    flagURL: "https://img.geonames.org/flags/x/af.gif"
-  },
   {
     name: "US Dollar",
     abbreviation: "USD",
